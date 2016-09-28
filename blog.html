@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Zara's blog">
+    <meta name="author" content="Zara">
+
+<!-- favicon, currently unused    <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Zara's blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+        
+    <!-- Custom styles for this template -->
+    <link href="website.css" rel="stylesheet">
+  </head>
+  <body>
+                <!-- navbar -->
+      <div>
+            <nav class="hidden-xs hidden-sm hidden-md navbar navbar-default navbar-round navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header pull-right">
+
+                    <!-- TODO: space these out, change things and links to dropdowns -->
+                        <a href="index.html#about"
+                           class="btn btn-default btn-spaced navbar-btn">
+                                About Me
+                        </a>
+                        <a href="index.html#things"
+                           class="btn btn-default btn-spaced navbar-btn">
+                                Things I Make
+                        </a>
+                        <a href="index.html#work"
+                           class="btn btn-default btn-spaced navbar-btn">
+                               Work
+                        </a>
+                        <a href="index.html#links"
+                           class="btn btn-default btn-spaced navbar-btn">
+                               Links
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <nav class="hidden-lg navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header pull-left">
+                        <a href="index.html#about"
+                           class="btn btn-default btn-round navbar-btn">
+                                About Me
+                        </a>
+                        <a href="index.html#things"
+                           class="btn btn-default btn-round navbar-btn">
+                                Things I Make
+                        </a>
+                        <a href="index.html#work"
+                           class="btn btn-default btn-round navbar-btn">
+                               Work
+                        </a>
+                        <a href="index.html#links"
+                           class="btn btn-default btn-round navbar-btn">
+                               Links
+                        </a>
+                    </div>
+                </div>
+            </nav>
+          </div>
+          
+          
+    <div class="padded-non-mobile padded-mobile">
+        <div class="panel shadow background">
+            <div class="padded-non-mobile padded-mobile">
+                <div class="col-lg-8">
+                <h1>Blog!</h1>
+                <p> This is the start of a blog!</p>
+                <p> It's a collection of ramblings about software and other interests.
+                    It mainly serves as a space for me to hash out thoughts in more depth than on IRC.</p>
+                <p> The content will be very disorganized;
+                    the difficulty of organizing things nicely in raw html
+                    is the whole reason blog frameworks exist.
+                    But! This may well be offset by the fact that I'll probably never post anything.</p>
+                <p> I'll put things in reverse-chronological
+                    order. If this balloons in size, or distinct themes emerge, I'll spread the content
+                    across several pages, so it's easier to navigate.</p>
+                <p> I have an advanced, bespoke tagging system. It's called `ctrl+f`.</p>
+                <br>
+                <br>
+                </div>
+                    
+                    
+                <div class="row">
+                <div class="col-lg-6"> <!-- repeat cols per column in case want pics on right -->
+                <div class="panel-page non-mobile-round white"> <!--these should be zebra-striped, so next one would be panel-page grey -->
+                    <div class="padded-non-mobile padded-mobile">
+                        <h4 class="text-center"> Post The First (Sticky)</h4>
+                        <p><i>26.09.16</i></p>
+                        <br>
+                        <br>
+                        <p> I've started blogs in the past.
+                            What tends to happen is that I make, say, an art blog,
+                            post a few things,
+                            and then go on a music kick for ages.
+                            By the time I get back to art, 
+                            the blog is ancient</p>
+                        <p> So, this website is my attempt to avoid that sad fate,
+                            by having sections for multiple interests.
+                            There might be times when I only update the music
+                            section, or the games section, and so-on.</p>
+                        <p> At some point I'll revamp this so that it contains
+                            proper tags and soforth... But I won't stress over
+                            it until I have some actual content.</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                </div>
+                <div class="col-lg-6">
+                    <p><img src="img/selfportrait-2-with-eyebrows-colour-2-eveneyes-2-small.png" class="img-circle center-block" height="200"></p>
+                    <br>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="col-lg-6">
+                <div class="panel-page non-mobile-round grey"> <!--these should be zebra-striped, so next one would be panel-page white -->
+                    <div class="padded-non-mobile padded-mobile">
+                        <h4 class="text-center"> On Code</h4>
+                        <p> <i>26.09.16</i></p>
+                        <br>
+                        <br>
+                        <p> I haven't been coding for all that long,
+                            but I've found that writing a program has a lot in common with writing, well, words.</p>
+                        <p> People imply that writing skill has little overlap with coding skill,
+                            but I doubt this; writing a program with understandable control flow
+                            requires a similar process to
+                            writing out a clear explanatory paragraph.
+                            This is because clear code and clear writing require empathy for the reader.
+                            I think it's just a question of <i>noticing</i> confusing things
+                            -- and that comes with practice.
+                            Here are some things I personally look out for in my technical docs.
+                        </p>
+                        <p> I'll skip the obvious things
+                            ("don't waffle",
+                            "use terms most readers can understand")
+                            in favour of two things that are slightly less obvious,
+                            so that I'm not repeating advice you can find everywhere else on the internet.</p>
+                        <p> It's still not groundbreaking.
+                            But maybe it's useful to somebody!
+                            </p>
+                        <br>
+                        <p> First thing:
+                            ordering information.</p>
+                        <p> Written documents can be disorganised
+                            in the same way that a program can be disorganised.
+                            This is obvious when whole paragraphs leap around
+                            (and most people can notice and fix that),
+                            but there's also such a thing as a disorganised sentence.</p>
+                        <p> To illustrate with an example,
+                            here are two imaginary pieces of documentation:
+                        <p> #1</p>
+                            <blockquote> First, install foo. Next, do the thing.
+                                         Now, do the other thing. Finally, do the last thing.</blockquote>
+                        <p>#2</p>
+                            <blockquote> Do the thing. Before you do the last thing, do this thing.
+                                         Do the other thing.</blockquote>
+                        </p>
+                        <p> How many times have you been burned by something like the second example?
+                            What if I rephrase it like this:</p>
+                        <blockquote> Run the command. Before you do that, make sure you've set
+                                     your environment variable 'x' to 'y'. Now, run the script
+                                     baz.py. You will need foo installed for this to work.</blockquote>
+                        <p>? I see this <i>all</i> the time. It's the written-word equivalent of spaghetti code.</p>
+                        <p> Nobody sets out to write spaghetti code;
+                            it happens when people add things as they go along
+                            because it wasn't possible to plan.</p>                        
+                        <p> I see lots of documentation like the latter example,
+                            and I understand how it happens.
+                            People write the steps down in the order that the steps come to mind,
+                            and sometimes people write a later step
+                            before remembering an earlier step.
+                            Sometimes another person tacks an earlier step onto the end.</p>
+                        <p> That's a normal way to start...
+                            and it's much like doing the first sketch of a program
+                            (or the flow-chart for a program),
+                            before you remember extra things to add,
+                            and neaten it up.
+                            It's important to reorder things before publishing,
+                            so that someone can read instructions in the order of execution*.</p>
+                        <p> Writing in order also helps combat ambiguity.
+                            In the second sentence of the second example, it's not obvious what 'last'
+                            refers to. The previous instruction? Or the final step?
+                            It's much easier to make subjects of sentences clear
+                            if the writer puts those sentences in a sensible order.</p>
+                        <p> I think people skip the 'tidy up the order' step
+                            either because:
+                            a) They don't notice it
+                            or
+                            b) Documentation is perceived as less important;
+                               the bar is set so low that 
+                               people are praised for writing any docs at all.
+                               Therefore, people don't set time aside for polishing docs.</p>
+                        
+                        <br>
+                        <br>
+                        <p> Along with writing programs in a sensible order,
+                            it's good practice to use meaningful variable names.
+                            For example, if you have a function that builds a system,
+                            call it 'build_system()', not 'moomoomoo()'.
+                            That's common knowledge.
+                            But there's a written-word equivalent,
+                            that is under-used:
+                            referring to a subject or object by name,
+                            rather than pronoun.</p>
+                        <p> This isn't always necessary,
+                            but it matters when the sentence structure could cause ambiguity.</p>
+                        <p> To illustrate, here's an example,
+                           quoted from above:</p>
+                        <blockquote>It's much easier to make subjects of sentences clear
+                            if the writer puts <i>those sentences</i> in a sensible order
+                        </blockquote>
+                        <p> In that example,
+                            in place of the italicised text,
+                            the writer could use 'them':
+                        <blockquote>It's much easier to make subjects of sentences clear
+                            if the writer puts them in a sensible order</blockquote>
+                            But that would be harder to skim.
+                            A tired reader might think
+                            'them' referred to 'subjects'.</p>
+                        <p> If you constantly need to refer to things by name,
+                            and your prose is getting dry,
+                            it's a sign that you should reorder some sentences.
+                            Much like how,
+                            if a line of code is 500 characters long,
+                            the answer isn't to shorten all the variable names to 1 letter,
+                            but to split the line up into smaller functions.</p>
+                        <p> Well, that's that. I've listed a couple of things that slow
+                            readers down when they're trying to scan for important information,
+                            that I personally try to avoid.
+                            The first is always worth fixing.
+                            The second is more of a 'be aware of this and use your judgement' case;
+                            you can go too far with it and end up with 'legalese'
+                            that's even harder to follow. So be careful!</p>
+                        <p> Anyway, when writing technical documentation,
+                            the world will thank you
+                            if you assume your reader is an insomniac
+                            who is operating on about 0.000001% of their potential brainpower
+                            (this is me on any given day).</p>
+                        <p> That way,
+                            us insomniacs will still be able to follow it,
+                            and the rest of the world will be able to follow it <i>easily</i>. :)</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-6"> <!-- The following linebreaks are a lazy hack so I can annotate inline -->
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="panel panel-default padded"><p> *This is a reason that I prefer the humble 'for' loop
+                            and if/else statements
+                            to list comprehensions,
+                            even though list comprehensions are more 'pythonic'.
+                            The syntax for list comprehensions
+                            means that my brain has to jump back and forth.</p>
+                        <p> A 'for' loop with if/else goes:
+                            <blockquote>for a thing, in this set of things,
+                                if x is the case,
+                                    do y.</blockquote></p>
+                        <p> You can easily lay that out as a series of questions,
+                            progressing with each 'yes' answer
+                            (and abandoning with any 'no'):</p>
+                        <p> 'Here's a thing-- is it in this set? Yes! Is x the case? Yes! Okay, do y.'</p>
+                        <p> The list comprehension equivalent is:
+                            <blockquote>do y,
+                                            for a thing, in this set of things,
+                                                if x is the case.</blockquote></p>
+                        <p> The questions layout doesn't work here.
+                            I find the order hard to keep track of.</p>
+                        <p> Maybe this order is preferable when trying to see why something did 'y',
+                            and it's designed around debugging.</p>
+                        <p> It feels like the reverse of the
+                            order in which the instructions are evaluated and executed.
+                            And it's the reverse of the order I would interpret an instruction.
+                            The criteria that need to be satisfied
+                            feel like bracketed afterthoughts,
+                            but computers tend not to go,
+                            'Okay,
+                            I'll run this command
+                            and then I'll see if
+                            the if statement evaluates to True or False'
+                            (and if your computer <i>does</i> behave like this,
+                            take it back to the shop).</p>
+                            <p>For a more natural languagey example, compare:
+                            <blockquote> For each shop, on this street,
+                                         if the shop stocks fabric,
+                                         go inside the shop</blockquote>
+                            to
+                            <blockquote> Go inside the shop,
+                                         for each shop, on this street,
+                                         if the shop stocks fabric.</blockquote>
+                        </p>
+                        <p> I suppose my ideal would be:
+                        <blockquote> On this street,
+                                     for each shop,
+                                     if the shop stocks fabric,
+                                     go inside the shop.</blockquote>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <hr>
+        <div class="container text-center">
+            <i>I made this website using
+            <a href="http://getbootstrap.com/">Bootstrap</a></i>
+        </div>
+        <br>
+    </div>
+  </body>

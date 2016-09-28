@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Zara's website">
+    <meta name="author" content="Zara">
+
+<!-- favicon, currently unused    <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Zara's site</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+        
+    <!-- Custom styles for this template -->
+    <link href="website.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navbar -->
+    <div>
+        <nav class="hidden-xs hidden-sm hidden-md navbar navbar-default navbar-round navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header pull-right">
+
+                    <!-- TODO: space these out, change things and links to dropdowns -->
+                    <a href="#about"
+                       class="btn btn-default btn-spaced navbar-btn">
+                            About Me
+                    </a>
+                    <a href="#things"
+                       class="btn btn-default btn-spaced navbar-btn">
+                            Things I Make
+                    </a>
+                    <a href="#work"
+                       class="btn btn-default btn-spaced navbar-btn">
+                           Work
+                    </a>
+                    <a href="#links"
+                       class="btn btn-default btn-spaced navbar-btn">
+                           Links
+                    </a>
+                </div>
+            </nav>
+            <nav class="hidden-lg navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header pull-left">
+                    <a href="#about"
+                       class="btn btn-default btn-round navbar-btn">
+                            About Me
+                    </a>
+                    <a href="#things"
+                       class="btn btn-default btn-round navbar-btn">
+                            Things I Make
+                    </a>
+                    <a href="#work"
+                       class="btn btn-default btn-round navbar-btn">
+                           Work
+                    </a>
+                    <a href="#links"
+                       class="btn btn-default btn-round navbar-btn">
+                           Links
+                    </a>
+                </div>
+            </nav>
+    </div>
+    <!-- main text-->
+    <div class = "container marketing">
+        <div class="row">
+            <!-- empty divs make pic display in middle -->
+            <div class = "col-lg-4">
+            </div>
+            <div class = "col-lg-4">
+                <img class="img-circle center-block" src="img/selfportrait-2-with-eyebrows-colour-2-eveneyes-2-small.png" alt="About me" width="400" height="400">
+                    <h2 class="text-center"> Creative Stuff </h2>
+                    <p class="text-center"> Music, art, code and misc.</p>
+            </div>
+            <div class = "col-lg-4">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class ="panel shadow">
+            <div class="container">
+                <div id="about" class="lead"> <!-- id is here as navbar hides top -->
+                    <h3>Welcome to my website!</h4>
+                </div>
+                <div class="padded">
+                    <div class = "col-lg-4">
+                        <a href="#about" class="dark">
+                            <img class="img-circle" src="img/shelby-crop-small.jpg" alt="About me" width="200" height="200">
+                        </a>
+                        <br>
+                        <br>
+                        <p> <i>I look like this, more or less.</i></p>
+                        <br>
+                        <br>
+                    </div>
+                    <p> I'm Zara. </p>
+                    <p> I'm a professional software developer. </p>
+                    <p> I make a lot of things, in various media, so I'm hoping
+                        this website can serve as a hub. :) I find I never keep
+                        up with blogs when I try to start them,
+                        so here goes the hundredth try!
+                        <br>
+                        This will also summarize my professional experience, for
+                        the curious. It's pretty dry. If you wish to contact me,
+                        the best email to use is thezarazia[at]gmail[dot]com .
+                    </p>
+                    <p> I'm generally on freenode as Zara.</p>
+                </div>
+            </div>
+        </div>
+        <div id="things">
+            <br>
+            <br>
+        </div>
+        <div class="container">
+            <div class="padded">
+                <p class="lead">I make things!</p>
+                <div class="row padded">
+                    <!-- try to keep all things here 200px by 200px, to avoid horror -->
+                    <div class="col-md-6">
+                        <a href="music.html" class="dark">
+                        <h4 class="text-center">Music</h4>
+                        <img class="img-rounded img-responsive center-block embiggen twohundred"  src="img/composition-crop.png"></a>
+                        <br>
+                        <br>
+                        <a href="games.html" class="dark">
+                        <h4 class="text-center">Games</h4>
+                        <img class="img-rounded img-responsive center-block embiggen twohundred" src="img/screenshot_2_crop.jpg"></a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="art.html" class="dark">
+                        <h4 class="text-center">Art</h4>
+                        <img class="img-rounded img-responsive center-block embiggen twohundred" src="img/i-should-be-asleep-thumbnail.png"></a>
+                        <br>
+                        <br>
+                        <a href="blog.html" class="dark">
+                        <h4 class="text-center">Words</h4>
+                        <img class="img-circle img-responsive center-block embiggen twohundred" src="img/speechbubble.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="work">
+            <br>                
+            <br>
+        </div>
+        <div class="panel shadow">
+            <div class="container">
+                <div class="padded">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a href="http://storyboard.openstack.org/#!/story/list">
+                                <img class="img-circle center-block" src="img/storyboard-crop.png" alt="About me" width="200" height="200">
+                                <br>
+                                <p class="text-center"><i class="dark">StoryBoard!</i></p>
+                            </a>
+                        </div>
+                        <div class = "col-lg-4">
+                            <h4 class="text-center"> Professional Experience and Skills</h4>
+                        </div>
+                        <div class="col-lg-4"></div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-lg-8">
+                        <p>I am a core reviewer in the OpenStack community for StoryBoard,
+                           a task-tracker designed for cross-project work.
+                           <a href="http://storyboard.openstack.org"> It's over here!</a>
+                        </p>
+                        <p>I currently work for Codethink Ltd. I have experience with:</p>
+
+                        <p><b>OpenStack</b> <div class="panel padded-low grey">I am active in the community,
+                                        and am familiar with the processes,
+                                        terminology,
+                                        and many of the tools.
+                                        <br>
+                                        <br>
+                                        As a core reviewer on the StoryBoard project,
+                                        part of the OpenStack project's infrastructure,
+                                        I have gained a working knowledge of the
+                                        the infrastructure configuration and documentation,
+                                        along with cross-project initiatives. I have a
+                                        high-level view of how OpenStack core services fit together,
+                                        along with the roles of many other projects,
+                                        and I have an understanding of OpenStack governance.
+                                        <br>
+                                        <br>
+                                        In October 2015, I co-moderated a task-tracking
+                                        infrastructure session in Tokyo with Thierry Carrez (ttx)
+                                        at the Mitaka summit.
+                                        <br>
+                                        I also co-led the Newton task-tracking infrastructure session
+                                        in April 2016 with Adam Coldrick (SotK) and Craige McWhirter (craige).
+                                        <br>
+                                        <br>
+                                        I've somehow ended up responsible for announcing all StoryBoard news;
+                                        as a result,
+                                        I have been featured in the OpenStack SuperUser magazine
+                                        on 
+                                        <a href = "http://superuser.openstack.org/articles/openstack-gerrit-storyboard-integration/">
+                                            two
+                                        </a>
+                                        <a href="http://superuser.openstack.org/articles/keep-your-openstack-projects-on-track-with-storyboard/">
+                                            occasions.
+                                        </a>
+                                        My stackalytics are <a href="http://stackalytics.com/?user_id=zara-zaimeche"> here</a>.
+                                        I review far more than I code; StoryBoard is continuously delivered,
+                                        so I am meticulous about testing and reviewing patches,
+                                        to ensure that the infrastructure production instance always functions as expected.</p>
+                                        </div>
+                                        
+                        <p><b>Linux</b> <div class="panel padded-low white">Common tools, the shell, the Filesystem Hierarchy Standard.
+                                      I do the vast majority of my work on Linux.</p>
+                                      </div>
+                                      
+                        <p><b>Git</b> <div class="panel padded-low grey">I use Git almost every day of my professional life.
+                                      Some commands I use a lot:
+                                      `clone`, `branch`, `checkout`, `add`, `rm`, `commit`, `push`,
+                                      `pull`, `merge`, `log`, `status` and `rebase` (and variations on a theme of
+                                      `git reset --hard HEAD`, sadly). I'm also familiar with common flags. I use Git on both
+                                      Linux and Windows.</p>
+                                      </div>
+                                      
+                        <p><b>Gerrit</b><div class="panel padded-low white"> I LOVE GERRIT WITH ALL MY HEART. I use it every day
+                                      for code review and have written scripts that use the API.
+                                      (One reason I love Gerrit so much is that the API makes it simple to do this)
+                                      I've also helped test the OpenStack infrastructure staging
+                                      instance
+                                      (I uncovered a bug in something completely unrelated to what we were testing,
+                                       which is how these things always seem to go...).</p>
+                                       </div>
+                                      
+                        <p><b>Python</b><div class="panel padded-low grey"> For professional work, I mainly use python for scripting;
+                                      there are example tutorial scripts I wrote for others
+                                      <a href="https://review.openstack.org/#/c/371620/">here</a>.
+                                      Those are commented versions of the scripts I made
+                                      to help with the infrastructure team's September bugsquash.
+                                      <br>
+                                      <br>
+                                      I like python, as it pushes people to write code that is easy
+                                      to understand; communication matters to me.
+                                      <br>
+                                      I'm learning python in more depth at the moment,
+                                      so that I can feel more comfortable with the libraries,
+                                      and classes and object-oriented design more generally;
+                                      you can follow my progress on <a href="https://github.com/Zarathecat">Github</a>.</p>
+                                      </div>
+                                      
+                        <p><b>Virtual Machines</b><div class="panel padded-low white"> I'm familiar with KVM with Virtmanager,
+                                                Virtualbox
+                                                and of course OpenStack's Horizon! I have used
+                                                Virtmanager heavily, and the others quite a bit.
+                                                I've even battled my way through a labyrinth of
+                                                menus to get Virtualbox set up on Windows 10 (the
+                                                options for the BIOS are squirreled away)</p>
+                                                </div>
+
+                        <p><b>HTML</b>, <b>CSS</b> and <b>Bootstrap</b> (eg: this website)</p>
+                        <br>
+                        
+                        <p><b>UI design</b></p>
+                        <br>
+                        
+                        <p><b>IRC, mailing lists, etherpads</b>, and other communication tools</p>
+                        <br>
+                            
+                        <p><b>MySQL</b><div class="panel padded-low grey"> StoryBoard uses a MySQL database,
+                                    so I'm used to querying MySQL via the command line when
+                                    debugging strange behaviour, and am aware of some installation
+                                    quirks.</p>
+                                    </div>    
+                                                        
+                                         
+
+                                    
+                        <p><b>C</b><div class="panel padded-low white">This was the first programming language I learned,
+                             so it's familiar to me, especially as Python is based on C</p>
+                             </div>
+                             
+                        <p>Misc: <b>markdown, Pygame, Github, npm, software licenses,
+                                   documentation, make, gcc, ssh, scp, vim</b></p>
+                                   <br>
+                                       
+                        <p class="small panel padded-low grey"> And technically, I've been working in <b>AngularJS</b> for over a year--
+                            but I still feel like I just hack.</p>    
+                        <br>
+                        <p>Before StoryBoard, I mainly worked on systems engineering,
+                           using a framework to write build and install instructions
+                           for custom operating systems.</p>
+                           <br>
+                            
+                           <p>I have experience drafting reports (for delivery and research)
+                           and other written materials. I have helped to train interns
+                           at my current workplace, and I enjoy working publicly in teams.</p>
+                           <br>
+
+                        <br>
+                        <hr>
+                        <br>
+                        <h4> Academic History </h4>
+                        <br>
+
+                        <p>* B.A. (Hons) Philosophy, 2:1, <a href="http://www.manchester.ac.uk/study/experience/reputation/">The University of Manchester</a></p>
+                        <br>
+                        <h4>Earlier Qualifications</h4>
+                        <p>
+                        * A Levels: A*, A*, A in English Literature; Drama and Theatre Studies; English Language
+                        </p>
+                        <p>
+                        * AS Levels: AA in Mathematics; Sociology
+                        </p>
+                        <br>
+                        <p>
+                        * GCSEs: A*A*A*A*AAABC in English Language; English Literature; French; Religious Studies;
+                                                  Mathematics; Science1; Science2; Drama and Theatre Studies; Art
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="http://stackalytics.com/?user_id=zara-zaimeche"
+                               class="btn btn-default btn-pale btn-round shadow center-block"> Stackalytics!
+                            </a>
+                            <br>
+                            <br>
+                            <br>
+                            <a href="http://superuser.openstack.org/articles/openstack-gerrit-storyboard-integration/"
+                               class="btn btn-default btn-round shadow center-block">
+                                SuperUser Interview #1
+                            </a>
+                            <br>
+                            <br>
+                            <br>
+                            <a href="http://superuser.openstack.org/articles/keep-your-openstack-projects-on-track-with-storyboard/"
+                               class="btn btn-default btn-pale btn-round shadow center-block"> 
+                                   SuperUser Interview #2
+                            </a>
+                            <br>
+                            <br>
+                            <br>
+                            <a href="https://github.com/Zarathecat"
+                               class="btn btn-default btn-round shadow center-block">
+                                   My Github
+                            </a>
+                            <br>
+                            <br>
+                            <br>
+                            <a href="mailto:thezarazia@gmail.com"
+                               class="btn btn-default btn-pale btn-round shadow center-block"> 
+                                   Email Me!
+                            </a>
+                            <br>
+                            <br>
+                            <br>
+                        </div> <!-- A place for links -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="links">
+            <div class="padded">
+                <b>Misc. Links:</b>
+                <br>
+                <br>
+                <a href="http://sotk.co.uk/">SotK's website.</a>
+                                             (There are two cores on StoryBoard;
+                                             SotK (Adam Coldrick) is one and I am the other.
+                                             He plans out architecture and writes
+                                             far more code,
+                                             as his brain happens to be made of Python.
+                                             He's also an absolute gentleman.)
+                <br>
+                <a href="http://www.logicative.com/">Beth Elwell's site</a>
+                                                     Beth works on OpenStack webclient things,
+                                                     loves CSS,
+                                                     and is always ready to help out the StoryBoard team in a pinch.
+                <br>
+                <a href="https://www.openstack.org/"> OpenStack</a>
+                <br>
+                <a href="https://storyboard.openstack.org">StoryBoard</a>
+                <br>
+            </div>
+        </div>
+        
+        <div class="container text-center">
+            <i>I made this website using
+            <a href="http://getbootstrap.com/">Bootstrap</a></i>
+        </div>
+        <br>
+    </div>
+  </body>
