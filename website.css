@@ -5,7 +5,7 @@ body {
   background: linear-gradient(#f7ffff, #f1fdfd);
 }
 
-/* current saturated complement to colour scheme is #9e2801*/
+/* current saturated complement to colour scheme is #bc5e00 or #ff860d*/
 
 html {
     min-height: 100%; /*makes content like background stretch to fill viewport*/
@@ -32,6 +32,11 @@ html {
 .grey {
     background: #fafafa;
 }
+
+.orange {
+    background: #ff860d;
+}
+
 .twohundred {
     width: 200px;
     height: 200px;
