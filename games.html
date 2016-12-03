@@ -72,21 +72,28 @@
         <div class="row">
             <div class="col-lg-6">
                 <h1>Finally making games!</h1>
+                <br>
                 <p> I'm learning to python and pygame at the moment.
                     This page will document my experiences!
                     I should've started earlier, really.</p>
+                <br>
+                <h2>Breakout Clone </h2>
                 <p>After spending about a
                     week with pygame after work,
                     I tried making a little breakout clone to
                     see if I could.
                     I got the basic skeleton working in about an hour and a half.
-                    Maybe that's a long time,
-                    whatever,
+                    Maybe that's a long time;
+                    whatever;
                     it worked.</p>
                 <p> The actual game can be cloned <a href="https://github.com/Zarathecat/breakout-clone">here</a>
                     .</p>
+                    
             </div>
             <div class="col-lg-6">
+                <br>
+                <br>
+                <br>
                 <p> <i>Some screenshots:</i></p>
                 <div class="col-lg-6">
                     <img src="img/screenshot.jpg" class="twohundred img-rounded">
@@ -94,17 +101,16 @@
                 </div>
                 <div class="col-lg-6">
                     <img src="img/screenshot_1.jpg" class="twohundred img-rounded">
-                    <br>
-                    <br>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6">
-                                <p>You'll find the music for it <a href="music.html">on this very website</a>.
+                <p>You'll find the music for it <a href="music.html">on this very website</a>.
                     Put it in a 'music' folder in the top level folder.</p>
                 <p>You will need python and pygame to run it.
-                   It's still very basic. :) </p></div>
+                   It's still very basic. :) </p>
+            </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
                 <div class="col-lg-6">
@@ -113,14 +119,91 @@
                 <div class="col-lg-6">
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h2> Python-Python</h2>
+                <img src="img/snakeshot2.jpeg" class="img-rounded">
+                <p><i>Clone it <a href="https://github.com/Zarathecat/pythonpython.git">here</a>!</i></p>
+                <br>
+                <p> Also known as... snake. This is written in python,
+                and is another 'write it to see if you can' thing.
+                    As with the breakout clone, I didn't allow myself to look at anybody else's solution
+                    while making this. I loved snake as a kid, so I really wanted
+                    to know if I'd be able to write it,
+                    since then I'd feel like some kind of legendary superhero or something.</p>
+                    <p>Turns out I can!</p>
+                    <p>The implementation isn't the best (eg: when the snake eats food,
+                    a segment is added, instead of just not removed. As a result, the
+                    snake could theoretically hit itself while growing, though I've
+                    yet to hit this while playing.
+                    It also looks messier than an alternative might), but it's playable.</p>
+                <p> Early on, I hit a weird bug where the snake would stop being responsive after a while;
+                    it would ignore the player and just crash into a wall. Eventually I realised this was
+                    because certain keypresses (KEYDOWNS at the time) were not being handled, so were
+                    filling the queue. So I fixed this by handling those.</p>
+                <p> The second issue I hit was that the snake felt... clunky. This was because it was
+                    changing direction based on KEYUP events,
+                    whereas as a player you expect the snake to change
+                    direction the instant you *press* the key, not the instant you release it.
+                    So that was a pretty simple fix; I started listening for KEYDOWNS instead, and discarded
+                    the KEYUPS so they wouldn't get in the way.</p>
+                <p> So, this took a few hours of development to be free of game-destroying bugs.
+                A little after I got the basic thing working, I jazzed it up a bit,
+                with some retro faux 3D. On top of each shape, I drew a smaller, lighter coloured shape, and pinned
+                it at the same top_left coordinate.
+                This gives the (deeply unconvincing) illusion of a lightsource to the top left.
+                I repeated this a couple of times per shape, to soften it a bit.
+                I also made the segments of the
+                snake a bit more distinct, by changing their shape from squares to circles.</p>
+            </div>
+            <div class="col-lg-6">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                    <img src="img/snake-screenshot-2.jpeg" class = "img-rounded" width="250" height="250">
+                    <p> <i> The early version. No score yet. </i></p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="img/snake3Dpy1.jpeg" class = "img-rounded twohundred">
+                    <p> <i> With a score and very basic faux-3D.</i></p>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                    <img src="img/snake-screenshot-4.jpeg" class = "img-rounded twohundred">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="img/snake3Dpy3.jpeg" class= "img-rounded" width="250" height="250">
+                </div>
             </div>
         </div>
-        <br>
-        <hr>        
-        <div class="container text-center">
-            <i>I made this website using
-            <a href="http://getbootstrap.com/">Bootstrap</a></i>
-        </div>
     </div>
+    <br>
+    <hr>        
+    <div class="container text-center">
+        <i>I made this website using
+        <a href="http://getbootstrap.com/">Bootstrap</a></i>
+    </div>
+</div>
  
   </body>
