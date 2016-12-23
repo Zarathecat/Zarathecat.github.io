@@ -133,11 +133,10 @@
                     to know if I'd be able to write it,
                     since then I'd feel like some kind of legendary superhero or something.</p>
                     <p>Turns out I can!</p>
-                    <p>The implementation isn't the best (eg: when the snake eats food,
-                    a segment is added, instead of just not removed. As a result, the
-                    snake could theoretically hit itself while growing, though I've
-                    yet to hit this while playing.
-                    It also looks messier than an alternative might), but it's playable.</p>
+                    <p>My first implementation was pretty bad; when the snake ate food,
+                    a segment would be added, instead of just not removed. So the snake could
+                    theoretically hit itself while playing, and it also looked messy, as the new
+                    segment sometimes briefly 'floated' behind the snake. I've since tidied it.</p>
                 <p> Early on, I hit a weird bug where the snake would stop being responsive after a while;
                     it would ignore the player and just crash into a wall. Eventually I realised this was
                     because certain keypresses (KEYDOWNS at the time) were not being handled, so were
@@ -153,9 +152,9 @@
                 with some retro faux 3D. On top of each shape, I drew a smaller, lighter coloured shape, and pinned
                 it at the same top_left coordinate.
                 This gives the (deeply unconvincing) illusion of a lightsource to the top left.
-                I repeated this a couple of times per shape, to soften it a bit.
-                I also made the segments of the
-                snake a bit more distinct, by changing their shape from squares to circles.</p>
+                I repeated this a couple of times per shape, to soften it a bit.</p>
+                <p> As with the breakout clone,
+                    there's an example backing track on <a href="music.html">this site</a>.</p>
             </div>
             <div class="col-lg-6">
                 <br>
@@ -195,6 +194,33 @@
                     <br>
                     <img src="img/snake3Dpy3.jpeg" class= "img-rounded" width="250" height="250">
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h2> Misc </h2>
+                <p> There are some things I've made that don't quite count as 'games',
+                    but I don't know a better place to list them.</p>
+                <p> <a href="https://github.com/Zarathecat/badpaint">Badpaint</a>
+                    is a 'drawing' application, using python and pygame.
+                    If you have the misfortune of using it,
+                    feel free to submit any masterpieces you create 
+                    to the 'gallery' in the repo. :)
+                    I liked the idea of making (and better, using!) something like this in the present day.
+                    And it will even work with top-of-the-range graphics tablets.
+                     </p>
+                     
+                <p> Finally, <a href="https://github.com/Zarathecat/invs2"> this </a>
+                    is the beginning of a space-invaders clone.
+                    There's nothing interesting about it yet.
+                    It's (just about) playable, so I thought I might as well make it open.
+                    </p>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-center"><img src="img/island.jpeg"></p>
+                <p class="text-center"> <i>Just one example of the sort of thing you can create in
+                    <a href="https://github.com/Zarathecat/badpaint">Badpaint</a>!</i>
+                </p>
             </div>
         </div>
     </div>
