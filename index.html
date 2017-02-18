@@ -198,121 +198,144 @@
                                         <br>
                                         * I co-led the Newton task-tracking infrastructure session
                                         in April 2016, Austin, Texas,
-                                        with Adam Coldrick (SotK) and Craige McWhirter (craige).
+                                        with <a href="http://sotk.co.uk/">Adam Coldrick (SotK)</a>
+                                        and Craige McWhirter (craige).
                                         <br>
                                         * In October 2016, Adam and I co-led the Ocata task-tracking infrastructure
                                         session in Barcelona.
                                         <br>
                                         <br>
-                                        I've somehow ended up responsible for announcing all StoryBoard news;
-                                        as a result,
-                                        I have been featured in the OpenStack SuperUser magazine
-                                        on 
-                                        <a href = "http://superuser.openstack.org/articles/openstack-gerrit-storyboard-integration/">
-                                            two
-                                        </a>
-                                        <a href="http://superuser.openstack.org/articles/keep-your-openstack-projects-on-track-with-storyboard/">
-                                            occasions.
-                                        </a>
-                                        My stackalytics are <a href="http://stackalytics.com/?user_id=zara-zaimeche"> here</a>.
-                                        I review far more than I code; StoryBoard is continuously delivered,
+                                        I've somehow ended up responsible for announcing all StoryBoard news,
+                                        so have been interviewed in the OpenStack SuperUser magazine about it a couple
+                                        of times (links on the right). I also set up the original
+                                        <a href="https://storyboard-blog.io/">StoryBoard Blog</a> infra,
+                                        though these days it's hosted on SotK's server, where it's much happier.
+                                        StoryBoard is continuously delivered,
                                         so I am meticulous about testing and reviewing patches,
                                         to ensure that the infrastructure production instance always functions as expected.
                                         <br>
                                         <br>
-                                        I also offer input on UI and UX for works in progress;
-                                        I prefer suggesting edits
-                                        on existing interfaces to creating interfaces from scratch.
-                                        When it comes to coding,
-                                        I work best in a team where I'm paired with someone who likes creating,
-                                        so that I can act as editor.
-                                        I'm generally more motivated to fix bugs than make new features.</p>
-                                        </div>
+                                        I also offer input on UI and UX for works in progress and respond to our users.
+                                        I prefer editing existing interfaces to creating interfaces from scratch;
+                                        I'm generally more motivated to fix bugs than make new features.
+                                        </div></p>
                                         
-                        <p><b>Linux</b> <div class="panel padded-low white">Common tools, the shell, the Filesystem Hierarchy Standard.
-                                      I do the vast majority of my work on Linux.</p>
-                                      </div>
+                        <p><b>Linux</b> <div class="panel padded-low white">Common tools,
+                                      the shell, the FHS... I don't really know what to say since
+                                      I mostly work on Linux and no longer know what I know.
+                                      I guess I have a habit of
+                                      accidentally teaching colleagues
+                                      about useful utilities in silly circumstances,
+                                      eg: ' `tree`
+                                      can be a fun party trick,
+                                      if you have parties as boring as mine,
+                                      since it makes you look like you know how
+                                      to operate the matrix or something' 'Wait, what's `tree`?'
+                                      ***accidentally teach a useful thing***
+                                      </div></p>
                                       
-                        <p><b>Git</b> <div class="panel padded-low grey">I use Git almost every day of my professional life.
-                                      Some commands I use a lot:
-                                      `clone`, `branch`, `checkout`, `add`, `rm`, `commit`, `push`,
-                                      `pull`, `merge`, `log`, `status` and `rebase` (and variations on a theme of
-                                      `git reset --hard HEAD`, sadly). I'm also familiar with common flags. I use Git on both
-                                      Linux and Windows. <br><br>It might seem a bit weird to list commands; I'm doing it because
-                                      people use 'familiar with git' to mean a lot of different things, so
-                                      listing the commands I use *frequently* may give a better indication of how familiar I am.
-                                      For example, I've used `bisect`, but only rarely, so wouldn't feel confident listing it there;
-                                      I do `git rebase -i master` many times a day on different branches.</p>
-                                      </div>
+                        <p><b>Git</b> <div class="panel padded-low grey">I use Git daily,
+                                      and understand how Git itself stores information in trees, blobs and commit objects.
+                                      I'm familiar with most git commands
+                                      by now, including some 'plumbing' commands (eg: `git cat-file` for reading git objects)
+                                      and am familiar with common flags. I have written git hooks, including
+                                      one to
+                                      automate building documentation with Sphinx.
+                                      I also have some familiarity with tig, for more
+                                      finegrained history searches, though I'm not proficient with it yet. I use git on both
+                                      Linux and Windows.                                      </div></p>
                                       
-                        <p><b>Gerrit</b><div class="panel padded-low white"> I LOVE GERRIT WITH ALL MY HEART.
-                                      I've used it roughly every day for a year
+                        <p><b>Gerrit</b><div class="panel padded-low white"> Gerrit's great!
+                                      I use it frequently
                                       for code review, and have written scripts that use the API.
-                                      (One reason I love Gerrit so much is that the API makes it simple to do this)
+                                      (One reason I'm so fond of Gerrit is that the python gerritlib 
+                                      API made it easy to do this
+                                      back when I knew almost no python)
                                       I've also helped test the OpenStack infrastructure staging
-                                      instance, uncovering a bug in something completely unrelated to what we were testing,
-                                       which is how these things always go...
-                                       I am currently unable to use it as much,
-                                       and I miss it. If a project uses gerrit, it makes me much keener to contribute! :) </p>
-                                       </div>
+                                      instance in the past. I'm currently learning how gerrit's NoteDB
+                                      uses git notes to record review information in git
+                                      repositories, with a view to making a Python NoteDB API. 
+                                       </div></p>
                                       
-                        <p><b>Python</b><div class="panel padded-low grey"> For professional work, I mainly use python for scripting;
+                        <p><b>Python</b><div class="panel padded-low grey"> For professional work,
+                                      I mainly use python for scripting;
                                       there are example tutorial scripts I wrote for others
                                       <a href="https://review.openstack.org/#/c/371620/">here</a>.
                                       Those are commented versions of the scripts I made
-                                      to help with the infrastructure team's September bugsquash.
+                                      to help with the OpenStack infrastructure team's September 2016
+                                      bugsquash.
                                       <br>
                                       <br>
                                       I like python, as it pushes people to write code that is easy
-                                      to understand; communication matters to me.
+                                      to understand; communication matters to me. There are also libraries
+                                      for <b>everything</b>.
                                       <br>
                                       I'm learning python in more depth at the moment,
                                       so that I can feel more comfortable with the libraries,
                                       and classes and object-oriented design more generally;
-                                      you can follow my progress on <a href="https://github.com/Zarathecat">Github</a>.</p>
-                                      </div>
+                                      you can follow my progress on <a href="https://github.com/Zarathecat">Github</a>.
+                                      </div></p>
                                       
-                        <p><b>Virtual Machines</b><div class="panel padded-low white"> I'm familiar with KVM with Virtmanager,
-                                                Virtualbox,
-                                                and of course OpenStack's Horizon! I have used
-                                                Virtmanager and Virtualbox the most,
-                                                including battling my way through a labyrinth of
-                                                menus to get Virtualbox set up on Windows 10 (the
-                                                options for the BIOS are squirreled away)</p>
-                                                </div>
+                        <p><b>Virtual Machines</b><div class="panel padded-low white"> I use
+                                                Virtualbox on a daily basis,
+                                                and have used KVM + Virtmanager in the past--
+                                                and of course OpenStack's Horizon!
+                                                </div></p>
 
                         <p><b>HTML</b>, <b>CSS</b> and <b>Bootstrap</b> (eg: this website)</p>
                         <br>
+
+                            
+                        <p><b>SQL, MySQL, PostgreSQL</b><div class="panel padded-low grey">
+                                    StoryBoard uses a MySQL database, and I've recently done
+                                    some work to support PostgreSQL also. Aside from commandline
+                                    SQL queries
+                                    for both database backends,
+                                    I have experience using
+                                    alembic to generate database migration scripts, and getting
+                                    sqlalchemy to work with both mysql and PostgreSQL
+                                    (basically just casting a billion enums).
+                                    </div>    </p>
+                                                        
+                       <p><b>Docker</b><div class="panel padded-low white"> I have some experience with
+                                    docker administration, including editing dockerfiles,
+                                    running containers, working inside them,
+                                    and other basic Docker commands,
+                                    for proof-of-concept research and development things.
+                                    </div> </p>
+                                    
                         
                         <p><b>UI design</b></p>
                         <br>
                         
                         <p><b>IRC, mailing lists, etherpads</b>, and other communication tools</p>
-                        <br>
-                            
-                        <p><b>MySQL</b><div class="panel padded-low grey"> StoryBoard uses a MySQL database,
-                                    so I'm used to querying MySQL via the command line when
-                                    debugging strange behaviour, and am aware of some installation
-                                    quirks.</p>
-                                    </div>    
-                                                        
-                       <p><b>Docker</b><div class="panel padded-low white"> I have experience as a user,
-                                    running containers, working inside them,
-                                    listing them and deleting them for testing purposes,
-                                    but nothing very in-depth. </p>
-                                    </div>                      
-
+                        <br>                     
                                     
                         <p><b>C</b><div class="panel padded-low grey">This was the first programming language I learned,
-                             so it's familiar to me, especially as Python is based on C</p>
-                             </div>
+                             so it's vaguely familiar to me, especially as Python is based on C.
+                             </div></p>
                              
-                        <p>Misc: <b>markdown, Pygame, Github, npm, software licenses, sphinx,
-                                   documentation, make, gcc, ssh, scp, vim, ubuntu, debian, fedora</b></p>
+                        <p><b>Perl</b><div class="panel padded-low white"> I've recently been learning perl,
+                                    in an effort to translate a Perl codebase into Python. So now I know the
+                                    difference between $_, $_[0] and $1 (along with `.` `..` and `...`).
+                                    I can't yet write Perl; I can just read (a little of) it.</div></p>
+                        
+                        <p><b>Setting up computers</b><div class="panel padded-low grey"> 
+                                    I <a href="./blog.html#we-built-a-pc">built my own PC</a>,
+                                    partitioned the drives and installed the operating systems.
+                                    That doesn't really fit in here,
+                                    but I'm noting it anyway,
+                                    because I've always wanted to do it. :)</div></p>  
+                                      
+                        <p>Misc: <b>markdown, Pygame, Github, npm, software licenses, sphinx, pelican, UE4 basics,
+                                   documentation, make, gcc, ssh, scp, vim, ubuntu, debian, fedora, Apache, cgit,
+                                   bash/shell scripts</b></p>
                                    <br>
                                        
                         <p class="small panel padded-low white"> And technically, I've been working in <b>AngularJS</b> for over a year--
-                            but I still feel like I just hack.</p>    
+                            but I still feel like I just hack. (I looked at Angular 2 recently, and preferred it;
+                            I got a simple single-page app working fairly quickly-- but packaging was beyond me, so I don't
+                            expect to use it for anything robust any time soon.)</p>    
                         <br>
                         <p>Before StoryBoard, I mainly worked on systems engineering,
                            using a framework to write build and install instructions
@@ -330,7 +353,7 @@
                         <h4> Academic History </h4>
                         <br>
 
-                        <p>* B.A. (Hons) Philosophy, 2:1, <a href="http://www.manchester.ac.uk/study/experience/reputation/">The University of Manchester</a></p>
+                        <p>* B.A. (Hons) Philosophy, 2:1, <a href="http://www.manchester.ac.uk">The University of Manchester</a></p>
                         <br>
                         <h4>Earlier Qualifications</h4>
                         <p>
