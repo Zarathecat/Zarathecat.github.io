@@ -93,7 +93,7 @@
                     
                 <div class="row">
                 <div class="col-lg-6"> <!-- repeat cols per column in case want pics on right -->
-                <div class="panel-page non-mobile-round grey"> <!--these should be zebra-striped-->
+                <div class="panel-page non-mobile-round white"> <!--these should be zebra-striped-->
                     <div class="padded-non-mobile padded-mobile">
                         <h4 class="text-center" id="post-the-first"> <a href="#post-the-first">Post The First (Sticky)</a></h4>
                         <p><i>26.09.16</i></p>
@@ -119,6 +119,355 @@
                 </div>
                 <div class="col-lg-6">
                     <p><img src="img/selfportrait-2-with-eyebrows-colour-2-eveneyes-2-small.png" class="img-circle center-block" height="200"></p>
+                    <br>
+                </div>
+                </div>
+                
+                <div class="row">
+                <div class="col-lg-6"> <!-- repeat cols per column in case want pics on right -->
+                <div class="panel-page non-mobile-round grey"> <!--these should be zebra-striped-->
+                    <div class="padded-non-mobile padded-mobile">
+                        <h4 
+                        class="text-center" 
+                        id="differences-between-python-and-perl"> 
+                            <a href="#differences-between-python-and-perl">
+                                Some Differences between Python and Perl
+                            </a>
+                        </h4>
+                        <p><i>26.02.17</i></p>
+                        <br>
+                        <br>
+                        <p>Recently, I was tasked with sketching out the groundwork
+                        for translating a Perl library to a Python library in a 
+                        week.
+                        I didn't know any Perl
+                        when I started, but I'm more
+                        used to 'translate this codebase from language A to language B'
+                        where I'm new to language A <i>and</i> language B,
+                        so it was almost relaxing. :) At
+                        least this time I had some Python!</p>
+
+                        <p>Needless to say, I didn't get very far with it, but I learned
+                        a lot, so this is a short post on some differences I've found betweeen
+                        Python and Perl. I figured it might be useful to note these
+                        things somewhere I can find them again. They are in no particular
+                        order.</p>
+
+                        <p>I am (obviously!) not an expert. Take this post with a grain of
+                        salt.</p>
+                        <br>
+
+                        <h4>1. Typing</h4>
+
+                        <p> My notes here are not in-depth. Python and perl handle types a bit
+                        differently. When asked to operate on two variables with
+                        different types, Perl automatically converts one of them to
+                        match the other, performs the  operation, and then changes
+                        the variable back to its original type.
+                        So if you add an int to a string, eg:</p>
+
+                        <p><code>"123"+1</code></p>
+
+                        <p>Perl will convert "123" to 123, do 123 + 1 to get 124, and then
+                        convert that back, for a result of "124".</p>
+
+                        <p>In Python, if you do <code>"123" + 1</code>, you will get a TypeError
+                        , as the types don't match. You could either do 
+                        <code>"123" + "1"</code> for string concatenation ("1231") 
+                        or <code>123+1</code> for
+                        addition (124).</p>
+                        <br>
+
+                        <h4>2. Variable Names</h4>
+
+                        <p>You've probably seen this around: Perl likes special characters.
+                        Variables in Perl are prefixed by special characters denoting
+                        their types; <code>@</code> connotes an array, <code>$</code> 
+                        connotes a scalar (single value- could be a number, could be a string),
+                        etc. So:</p>
+
+                        <p><code>@dogs</code></p>
+
+                        <p>would be something like:</p>
+
+                        <p><code>dogs = []</code></p>
+
+                        <p>in Python,</p>
+
+                        <p>and</p>
+
+                        <p><code>$foo = 'foo'</code></p>
+
+                        <p>might be </p>
+
+                        <p><code>foo = 'foo'</code></p>
+
+                        <p>And so on. In Perl,<code>&</code> in front of the variable name can be
+                         used as
+                        the syntax for calling a function, though there are multiple
+                        ways to do this. There is one way to call a function in Python:
+                        use brackets after the name of the function.<p>
+                        <br>
+
+                        <h4>3. Function Declaration</h4>
+
+                        <p>Well, in Perl they're known as subroutines, not functions. So
+                        that's handy to know when searching the internet.
+                        You define them like:</p>
+
+                        <pre>
+sub foo { 
+    foobarbaz
+}</pre>
+
+                        <p>Any parameters passed to the subroutine exist within it in a list
+                        denoted with the <code>@_</code> 'array variable'. You can also see 
+                        individual values from that array with the 'indexed scalars', eg:
+                        <code>$_[0]</code> and <code>$_[1]</code>, 
+                        which mean 'get first thing from list of
+                        parameters' and 'get second thing from list of parameters'
+                        respectively. Also, the list of parameters becomes an array
+                        once referred to with <code>@</code> (we'll come back to the difference
+                        between lists and arrays in Perl in a bit).</p>
+
+                        <p>Perl also has a plain old <code>$_</code>, 
+                         which is a default variable used by many things. 
+                         There is also <code>$1</code>, which can be used to get the 
+                         first thing matched in the most recently run regexp.</p>
+
+                        <p>Anyway.</p>
+
+                        <p>You could call a subroutine like:</p>
+
+                        <p><code>&makesounds('quack', 'moo');</code></p>
+
+                        <p>and that subroutine might be defined like:</p>
+
+                        <pre>
+sub makesounds {
+    local(@listofsounds)
+    @listofsounds = @_
+    local($ducksound)
+    $ducksound = $_[0]
+}</pre>
+
+                        <p>In python, the equivalent call would be:</p>
+
+                        <p><code>make_sounds('quack', 'moo')</code></p>
+
+                        <p>and the equivalent definition:</p>
+
+                        <pre>
+def make_sounds(sound_1, sound_2):
+    list_of_sounds = [sound_1, sound_2]
+    duck_sound = sound_1</pre>
+                            
+
+                        <p>you could do this in a lot of different ways, but that shows
+                        how things are passed. 
+                        (You wouldn't need the explicit `list_of_sounds` there, for a start)
+                        In python, variables are scoped to
+                        the function in which they are defined, by default, and
+                        it's preferable to call things by name than by position passed.</p>
+
+                        <p>Python functions always return None,
+                        unless they they are explicitly told to return a value.
+                        Perl subroutines always return a value,
+                        which will be the last thing evaluated in the subroutine.</p>
+                        <br>
+
+
+
+                        <h4>4. Arrays and Lists</h4>
+
+                        <p>Arrays and lists are not the same thing in Perl, even though
+                        these names are used interchangeably for other languages (and
+                        are frequently used interchangeably in info about Perl, for some
+                        reason). Perl's arrays are like python's lists. Perl's lists are
+                        more like python's tuples (eg: lists are immutable). 
+                        There are some differences,
+                        but that's my mental model of them at the moment. Square brackets
+                        denote arrays; curved brackets denote lists. There are better
+                        guides to these elsewhere on the internet. The guide I visited
+                        the most was:
+                         <a href="http://friedo.com/blog/2013/07/arrays-vs-lists-in-perl">this one</a>
+                         </p>
+                        <br>
+
+
+                        <h4>5. Perl has a library called Mouse that has nothing to do with
+                           the mouse</h4>
+
+                        <p>This library extends perl's object-oriented programming (OOP)
+                        support to make it easier to 
+                        assign attributes to classes and things. Many features covered by
+                        Mouse are builtin in Python. As you can see, I'm still sketchy on
+                        the details. </p>
+
+                        <p>Classes themselves are Perl packages;
+                        they list methods (subroutines), including an object constructor
+                        method, to make an instance of the class. The constructor can
+                        have any name you want. 
+                        If you name the constructor method 'new', then to create
+                        an instance of the class, you could do:<p>
+
+
+                        <p><code>$new_class_instance = ClassName -> new();</code></p>
+
+                        <p>The class(/package) 
+                        name is passed as the first argument to any methods in the class.<p>
+
+                        <p>In Python, a class is just a class, and the constructor is always
+                        the
+                        <code>__init__</code> method; to create an instance of the class, you do:</p>
+
+                        <p><code>new_class_instance = ClassName()</code></p>
+
+                        <p>In Python, the class will be passed to
+                        any of the class's methods that take 'self' as a parameter. This
+                        must be explicit in the definition of the method, but does
+                        not need to be listed when the method is called. So this:</p>
+
+<pre>
+class Foo:
+
+    def __init__(self, param):
+        self.name = param
+
+    def test(self):
+        print self.name
+
+Foo('foo').test()</pre>
+
+                        <p>will happily print 'foo', as it creates an instance of the Foo class
+                        and then runs that instance's 'test' method. You don't need to
+                        explicitly pass it 'self' in the call, or call <code>__init__()</code> by name.</p>
+
+                        <p>A misc note that doesn't fit in anywhere else nicely:
+                        in Python, you can have an array of arrays. 
+                        In Perl, arrays are always 1D; you would not have an array of
+                        arrays, but instead an array of references [to arrays].</p>
+                        <br>
+
+                        <h4>6. Asserts</h4>
+
+                        <p>Perl doesn't have asserts built in. Instead, it uses the <code>TestMore</code>
+                        library, specifically the function <code>ok()</code>. Sometimes <code>is()</code> is used
+                        instead, which is synonymous. So this also shouldn't be confused
+                        with the python <code>is</code>, which is roughly a test for equality 
+                        (to be precise, <code>is</code> in python checks that two variables point to
+                         the same object; <code>==</code> checks that both variables pointed to are 
+                        equal. These are referred to as 'reference equality' and 'value
+                        equality' respectively, and catch me out about once a week.).</p>
+
+                        <p>Misc note #2:
+                        for Perl code, the <code>Carp</code> library is used for various 
+                        exception-handling things;
+                        <code>croak</code>, <code>confess</code> and <code>cluck</code> 
+                        are all part of this library, 
+                        so that's what's going on if you see those in some code.
+                        Python code tends to include `try... except` blocks for this sort of thing.</p>
+                        <br>
+                            
+                        <h4>7. String concatenation</h4>
+
+                        <p>Perl uses the dot operator, eg:</p>
+
+                        <p><code>'foo' . 'bar'</code></p>
+
+                        <p>would be 'foobar'</p>
+
+                        <p>python uses the +:</p>
+
+                        <p><code>'foo' + 'bar'</code></p>
+                        <br>
+
+                        <h4>8. Ranges</h4>
+
+                        <p>In Python, a range is indicated with the range function, which 
+                        starts at the first argument and counts up to (but not including)
+                        the second (with a third argument as an optional 'step').
+                        To get the numbers 1 to 5, you would do:</p>
+
+                        <p><code>range(1, 6)</code></p>
+
+                        and to get every odd number from 1 to 10, you would do:
+
+                        <p><code>range(1, 11, 2)</code></p> 
+
+                        <p>(ie: that starts at 1, stops before it reaches 11, 
+                        and goes up in steps of 2)</p>
+
+
+                        <p>in Perl, the two dot operator is used. It is inclusive; to
+                        print out numbers 1 to 5, you would do:</p>
+
+                        <p><code>my @numbers = (1 .. 5);</code></p>
+
+                        <p>there is no 'step' option. You would have to combine the two dot operator
+                        with other things.</p>
+                        <br>
+
+                        <h4>9. Do Nothing</h4>
+
+                        <p>In Python, to indicate unimplemented code that should be skipped
+                        over, you use the pass keyword:</p>
+
+                        <pre>
+def foo():
+    pass
+                        </pre>
+
+                        <p>in Perl, you would use a triple dot:</p>
+
+                        <pre>
+sub foo {
+    ...
+}
+                        </pre>
+
+
+                        <p>Both the two dot and triple dot operators have a couple of other
+                        uses; see <a href="https://perlhacks.com/2014/01/dots-perl/">
+                        perlhacks</a> for more (and for more details on the ones I've mentioned).</p>
+                        <br>
+                            
+                        <h4>10. There's More Than One Way To Do Things</h4>
+
+                        <p>If you call a method from a class in Python, the order you write
+                        things is fixed
+                        and you need to include the brackets. In Perl, things are more
+                        fluid. For example, something like:</p>
+
+                        <p><code>Animals.list_animal()</code> in Python</p>
+
+                        <p>could become</p>
+
+                        <p><code>Animals -> list_animal();</code> in Perl</p>
+                        <p> BUT </p>
+                        <p><code>list_animal Animals</code> is an alternative that should work the same way.</p>
+                        <p>This is known as indirect object invocation. It gets interesting when
+                        you are calling methods with multiple parameters and soforth.</p>
+                        <br>
+                        
+                        <h4> 11. Whitespace </h4>
+                        <p> In Python, whitespace is syntactically significant. In Perl, it isn't.</p>
+                        <br>
+                        <br>
+                        <br>
+
+                        <p> Well, those are the ones I've hit so far that I feel I understand well enough
+                        to write about in <i>some</i> capacity. If there are errors, feel free to email
+                        me; I'm not an expert and I don't pretend to be! Hopefully this is still
+                        useful to someone, even if that someone is just future-me.</p>
+
+                    </div>
+                </div>
+                <br>
+                <br>
+                </div>
+                <div class="col-lg-6">
+                    <p></p>
                     <br>
                 </div>
                 </div>
