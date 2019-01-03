@@ -1,0 +1,121 @@
+                                <div class="row">
+                <div class="col-lg-6"> <!-- repeat cols per column in case want pics on right -->
+                <div class="panel-page non-mobile-round grey">
+                    <div class="padded-non-mobile padded-mobile">
+                        <h4 class="text-center" id="how-we-do-ui-and-ux">
+                            <a href="#how-we-do-ui-and-ux">How We Do UI/UX</a>
+                        </h4>
+                        <p><i>12.11.16</i></p>
+                        <br>
+                        <br>
+                        <p> This week, <a href="https://dmsimard.com/">David Moreau Simard (irc: dmsimard)</a>
+                            was kind enough to
+                            praise our work over the last few months on the UI and UX for StoryBoard!
+                            <a href="http://sotk.co.uk/about/">Adam Coldrick (irc: SotK)</a> and I* especially enjoy compliments like these,
+                            as StoryBoard has been our first foray into frontend development,
+                            and we've had to figure out a lot as we've gone along.</p>
+                            <p>The company where we work specialises in systems engineering,
+                            so we've been very fortunate to gain experience in web-development via working on OpenStack.
+                            We've had the opportunity to learn about the web-development
+                            ecosystem from people such as <a href="https://krotscheck.net/">Michael Krotscheck </a>
+                            (who has both taught us a lot and developed the bulk of StoryBoard before we were involved with the project),
+                            and <a href="http://www.logicative.com/">Beth Elwell</a> (who sends UI patches to StoryBoard as a relaxation method!).</p> 
+                        
+                            <p>So, anyway, we got a compliment!
+                               After I'd finished calling up everyone I knew,
+                               and telling them to read irc RIGHT NOW,
+                               I started wondering: how do we do stuff?
+                                For UI and UX design,
+                            can we offer any pointers to teams in the same position we were a year ago?</p>
+                            <p>I'll probably do this as a series of posts, as and when I remember things. So!
+                            Here's the first. I think it's the most important thing,
+                            and we saved a lot of time by starting to work this way early on.</p>
+                        <p><b>TIP: Dig to find out the actual problem</b></p>
+                        <p> There is a fitting Neil Gaiman quote;
+                             it's his fourth suggestion over here:</p>
+                        <p>
+                            <a href="https://www.theguardian.com/books/2010/feb/20/ten-rules-for-writing-fiction-part-one/"><i>
+                                "Remember: when people tell you something's wrong or doesn't work for them,
+                                they are almost always right. 
+                                When they tell you exactly what they think is wrong and how to fix it,
+                                they are almost always wrong"
+                            </i></a></p>
+                            <p> -- Neil Gaiman
+                            </p>
+                         <p> So, that's a quote about creative writing-- but we can generalise!
+                             When users have an issue, they will suggest specific implementation changes.
+                             When that happens, it's good to step back and establish what they're trying to do and
+                             why. 
+                             Identifying the root problem allows you to fix the same issue in all its guises,
+                             instead of moving buttons around and back again as you try to satisfy contradictory
+                             implementation suggestions.
+                             Often, you'll find the best change is nothing like the original suggestion.</p>
+                        <p>  You need to be active and engaged during this process;
+                             it's obvious when people reply with questions for the sake of it, like this:</p>
+                        <div><i>
+                        <p>  User: Argh, the 'create new task' button is on the left; all the other buttons live
+                                   on the right; it's annoying; can it go on the left, too?</p>
+                        <p>  Developer: So, what do you want to do when you click that button?</p></i>
+                        </div>
+                        <p>  Well, obviously they want to create a task. Like all development methodologies, don't
+                             follow this one dogmatically in cases where it makes no sense. :) Similarly...</p>
+                        <div><i>
+                        <p>  User: When I search for a tag, it doesn't show all things matching the tag I specify. It should do.</p>
+                        <p>  Developer: Why do you want the software to return all things matching the tag, instead of just some?</p></i>
+                        </div>
+                        <p>  That's an extreme example, just to show that you shouldn't ask questions
+                             without paying attention, trying to empathise with the user, and attempting
+                             to make yourself familiar with the process they want to perform.
+                             There *are* related questions that would make sense in that scenario, eg:</p>
+                        <div><i>
+                        <p>  Developer: Okay, you want a list of everything that matches that tag. Out of interest, how do you then use that
+                                        list?</p></i>
+                        </div>
+                        <p>  The user will say something unexpected,
+                             and this will reveal a *lot* about how you should present the list.
+                             For example, the user might want it laid out a certain way so it'll behave nicely
+                             when pasted into some other service, in which case it might be better to
+                             create an interface for other services (otherwise, the next user will want a different
+                             layout, and the next, etc).
+                             You might discover that your software can already solve their problem,
+                             as it has this interface already,
+                             and you need to draw more attention to the interface.
+                             Or, the user might plan to do something with the list that your
+                             software can't yet do, in which case you have an early heads-up for a bigger feature request.
+</p>
+                             <p>
+                             So, at this point, you note the use-case; if it seems like a good thing to fix,
+                             you plan to implement the fix. If not, you raise your reservations with the user;
+                             sometimes one of you will change your mind, sometimes not. If you still don't feel convinced,
+                             you put it on the backburner, and wait to see if
+                             a chorus of other people raise the same issue-- in which case should also discuss the
+                             reservations with them, see what they say, and revisit your assumptions as necessary.</p>
+                        <p> You need to be careful with this process. Firstly, if you ask questions just to try to change
+                        someone's mind, they will pick up on it and you won't have a productive discussion; you have to 
+                        go in with an open mind and be humble about your opinions. Secondly, you should respect the user's
+                        time; if the discussion takes too long,
+                            the user can get frustrated and think 'other software does this
+                            like x, so why can't this team just implement it like x?'. But that ignores the original motivation
+                            *not* to use that other piece of software-- people wanted a better implementation,
+                            not more of the same. </p>
+                        <p>Well, that's that! Hopefully, this will help you feel less overwhelmed when lots of users have
+                        different opinions, and you'll be able to discuss and change things more efficiently. Good luck!</p>
+
+                    </div>
+                </div>
+                <br>
+                <br>
+                </div>
+                <div class="col-lg-6">
+                    <p><a href="https://storyboard.openstack.org/#!/story/2000707">
+                           <img src="img/storyboard-screenshot-1.PNG" class="img-rounded img-responsive center-block">
+                       </a>
+                    </p>
+                    <p class="text-center"><i>StoryBoard!</i></p>
+                    <div class="panel panel-default padded">
+                    <p>* I only talk about SotK and myself here, as we work on StoryBoard from within the same context;
+                             this shouldn't be read as an implication that we're solely responsible for the UI and UX.</p>
+                    </div>
+                    <br>
+                </div>
+                </div>
